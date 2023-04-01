@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/output.css">
+    <title>Chatgpt2IMG</title>
+</head>
+<body>
+
+    <div id= 'image' class="textbox">
+        <span>Your Question : {{ yourquestion }}?</span><br>
+    <span>Answer: <br>
+{{ outresp }}
+    </span></div>
+ <button onclick="download()" class="chal">Download</button>
+   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+ <script>
+     function download(){
+         html2canvas(document.getElementById('image')).then(canvas => {
+             let a  = document.createElement('a');
+             a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+             a.download = 'yourchatgptanswer.jpg';
+             a.click();
+
+         });
+     }
+
+ </script>
+</body>
+</html>

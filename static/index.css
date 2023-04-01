@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+body {
+  background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    display: flex;
+ flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-family: Hind;
+           font-size: 60px;
+    color: darkslategrey;
+    margin: 15px;
+}
+.extra{
+     font-family: Hind;
+           font-size: 30px;
+    color: darkslategrey;
+    margin: 15px;
+}
+.box{
+   padding: 10px;
+}
+.chal{
+    margin: 20px;
+       background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #2F4F4F;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+
+.barabox{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.search-box{
+    border-radius: 3px;
+    border: 1px solid darkslategrey;
+ font-size: 25px;
+    font-family: Hind;
+    padding: 5px;
+     height:40px;
+     width:450px;
+    margin: 10px;
+}
